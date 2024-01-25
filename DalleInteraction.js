@@ -7,6 +7,6 @@ export default class DalleInteraction extends Interaction{
   }
 
   show(){
-    console.log(`PROMPT TEXT:\n\n${this.prompt}\n\nPROMPT IMAGE:\n\n${this.image}\n\nRESPONSE:\n\n${this.response}`);
+    console.log(`PROMPT TEXT:\n${this.prompt}\nPROMPT IMAGE:\n${this.image}\nRESPONSE:\n${this.response}`);
   }
 }

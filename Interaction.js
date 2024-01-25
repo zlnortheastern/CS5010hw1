@@ -4,6 +4,6 @@ export default class Interaction{
     this.response = response;
   }
   show(){
-    console.log(`PROMPT:\n\n${this.prompt}\n\nRESPONSE:\n\n${this.response}`);
+    console.log(`PROMPT:\n${this.prompt}\nRESPONSE:\n${this.response}`);
   }
 }
