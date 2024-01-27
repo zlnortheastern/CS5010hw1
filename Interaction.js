@@ -11,4 +11,8 @@ export default class Interaction {
   getType() {
     return "Interaction";
   }
+
+  replaceResponse(newResponse) {
+    this.response = newResponse;
+  }
 }
