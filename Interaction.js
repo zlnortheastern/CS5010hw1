@@ -5,7 +5,7 @@ export default class Interaction {
   }
 
   show() {
-    console.log(`PROMPT:${this.prompt} has a RESPONSE:${this.response}`);
+    console.log(`PROMPT: ${this.prompt} HAS A RESPONSE: ${this.response}`);
   }
 
   getType() {

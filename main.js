@@ -28,11 +28,10 @@ while (user != "0") {
     console.log("Give me a prompt. It could be followed by an image url");
     let p = prompt("Enter Prompt: ");
     let r = prompt("Give me a response: ");
-    let url = p.match(/(.*?)(https?:\/\/\S+|$)/);
-    if (url != null) {
-      let text = url[1].trim();
-      let u = url[2].trim();
-      myPromtManager.addDalleInteraction(text, u, r);
+    let image = p.match(/(https?:\/\/[^\s]+)/);
+    if (image) {
+      let text = p.split(image[0]);
+      myPromtManager.addDalleInteraction(text, image[0], r);
     } else {
       myPromtManager.recordPrompt(p, r);
     }
