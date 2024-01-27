@@ -34,11 +34,11 @@ node main.js
 The terminal will display 5 options to receive users' choice
 
 ```plaintext
-1. Show all interactions
-2. Add example interactions
-3. Add an interaction
-4. Delete an interaction
-0. Quit
+1. Show all interactions.
+2. Add example interactions.
+3. Add an interaction.
+4. Delete an interaction.
+0. Quit.
 ```
 
 **Mode 1** will show all recorded interactions.
