@@ -43,7 +43,7 @@ The terminal will display 5 options to receive users' choice
 
 **Mode 1** will show all recorded interactions.
 
-**Mode 2** will add 2 example interactions:
+**Mode 2** will add 2 test interactions:
 
 1.  Prompt: This is a prompt test 1
     
@@ -56,18 +56,15 @@ The terminal will display 5 options to receive users' choice
     Response: This is a response test 2
     
 
-**Mode 3** will make user add interactions they want (new feature). It will firstly display:
+(You can change any test content you want in main.js constant variable declerations.)
+
+**Mode 3** will make user replacing the response of the interactions they want (new feature). It will firstly display all interactions with index, and then ask the user to enter a number to replace the response with following prompt:
 
 ```plaintext
-Give me a prompt. It could be followed by an image url.
-Enter prompt:
-Give me a response:
+Enter an index to replace response:
+Give me a new response:
 ```
-
-If user entered any content with an image url, it will split it and record it as a DalleInteraction, otherwise it will be recorded as an Interaction.
 
 **Mode 4** will firstly display all interactions with index, and then ask the user to enter a number to delete the interaction they want.
 
 **Mode 0** will quit the program.
-
-
