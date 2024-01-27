@@ -1,11 +1,21 @@
 import PromptsManager from "./PromptsManager.js";
 import PromptSync from "prompt-sync";
 
+// Constant variables for test input
+const testPrompt1 = "This is a prompt test 1.";
+const testResponse1 = "This is a response test 1.";
+const testPrompt2 = "This is a prompt test 2.";
+const testResponse2 = "This is a response test 2.";
+const testURL = "https://upload.wikimedia.org/wikipedia/commons/6/6f/Northeastern_seal.svg";
+
+// Create a PromptsManager instance
 const myPromtManager = new PromptsManager();
+
+// Initialize the prompt-sync for getting user input.
 const prompt = PromptSync();
-let user = "";
 
 // Ask the user for a number to run different mode
+let user = "";
 user = userPrompt();
 
 // Loop to keep prompting the user until 0 is entered
@@ -18,8 +28,8 @@ while (user != "0") {
 
   // Add test interactions
   else if (user === "2") {
-    myPromtManager.addInteraction("This is a prompt test 1", "This is a response test 1");
-    myPromtManager.addDalleInteraction("This is a prompt test 2", "https://upload.wikimedia.org/wikipedia/commons/6/6f/Northeastern_seal.svg", "This is a response test 2");
+    myPromtManager.addInteraction(testPrompt1, testResponse1);
+    myPromtManager.addDalleInteraction(testPrompt2, testURL, testResponse2);
     //myPromtManager.showAllInteractions();
   }
 
